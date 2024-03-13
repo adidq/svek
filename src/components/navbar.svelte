@@ -14,7 +14,7 @@
         </li>
         {#if $page.data.session}
           <li class="nav-item">
-            <strong>{$page.data.session.user?.email ?? $page.data.session.user?.name}</strong>
+            <a href="/profile"><strong>{$page.data.session.user?.email ?? $page.data.session.user?.name}</strong></a>
           </li>
         {:else}
           <li class="nav-item">
