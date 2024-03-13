@@ -14,7 +14,11 @@
 </script>
 <style scoped>
   .c1{
-    display: center;
+    text-align: center;
   }
+  .avatar{
+    border-radius: 70%;
+    overflow: hidden;
+  }                     
 </style>                           
                               
