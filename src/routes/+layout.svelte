@@ -1,9 +1,6 @@
 <div>
   <header>
-    <nav>
-      <a href="/">home</a>
-      <a href="/auth/signin">signin</a>
-    </nav>
+    <Navbar />
   </header>
   <main>
     <slot />
@@ -13,5 +10,5 @@
   </footer>
 </div>
 <script>
-  
+  import Navbar from "$components/navbar.svelte";
 </script>
