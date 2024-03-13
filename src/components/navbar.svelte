@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
+    <a class="navbar-brand" href="/">Navbar</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -12,15 +12,20 @@
         <li class="nav-item">
           <a class="nav-link" href="/about">about</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-        </li>
+        {#if $page.data.session}
+          <li class="nav-item">
+            <strong>{$page.data.session.user?.email ?? $page.data.session.user?.name}</strong>
+          </li>
+        {:else}
+          <li class="nav-item">
+            <SignIn />
+          </li>
+        {/if}
       </ul>
     </div>
   </div>
 </nav>
 <script>
+  import { page } from "$app/stores"
+  import { SignIn, SignOut } from "@auth/sveltekit/components"
 </script>
