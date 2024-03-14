@@ -16,7 +16,7 @@
   import Navbar from "$components/navbar.svelte";
   import Header from "$components/header.svelte";
 </script>
-<style scoped>
+<style>
   main{
     margin: 10px;
   };
