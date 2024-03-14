@@ -7,8 +7,7 @@
   </main>
   <footer>
     <hr>
-    <p>footer</p>
-    <p>svek</p>
+    <h3>footer</h3>
   </footer>
 </div>
 <script>
