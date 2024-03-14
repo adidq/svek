@@ -13,3 +13,8 @@
 <script>
   import Navbar from "$components/navbar.svelte";
 </script>
+<style>
+  main{
+    margin: 5px;
+  }
+</style>
