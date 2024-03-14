@@ -2,7 +2,7 @@
     import { page } from "$app/stores"
 </script>
 {#if $page.data.session}
-<p>{$page.data.session.user?.name}</p>
+<h1>Hello <strong>{$page.data.session.user?.name}</strong>?</h1>
 {:else}
 <h1>please login</h1>
 <p>
