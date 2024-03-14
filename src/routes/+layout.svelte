@@ -19,5 +19,8 @@
 <style>
   main{
     margin: 10px;
-  };
+  }
+  footer{
+    margin: 5px;
+  }
 </style>
