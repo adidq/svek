@@ -17,7 +17,7 @@
   import Header from "$components/header.svelte";
 </script>
 <style>
-  main {
+  main{
     margin: 10px;
   };
 </style>

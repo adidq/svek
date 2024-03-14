@@ -1,25 +1,25 @@
-.gra1 {
+.gra1{
   background-image: linear-gradient(to right, blue, skyblue);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
 };
 
-.gra2 {
+.gra2{
   background-image: linear-gradient(to right, purple, blue);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
 };
 
-.gra3 {
+.gra3{
   background-image: linear-gradient(to right, white, gray);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
 };
 
-.graSvelte {
+.graSvelte{
   background-image: linear-gradient(to left, #EB5027, orange);
     background-clip: text;
     -webkit-background-clip: text;
