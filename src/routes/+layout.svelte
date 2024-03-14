@@ -6,8 +6,9 @@
     <slot />
   </main>
   <footer>
-    <hr/>
+    <hr>
     <p>footer</p>
+    <p>svek</p>
   </footer>
 </div>
 <script>
