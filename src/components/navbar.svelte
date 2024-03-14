@@ -22,12 +22,13 @@
               <li><a class="dropdown-item" href="/auth/signout">SignOut</a></li>
             </ul>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/profile"></a>
-          </li>
         {:else}
           <li class="nav-item">
-            <SignIn />
+            <a class="nav-link">
+              <SignIn>
+                <div slot="submitButton">Sign in</div>
+              </SignIn>
+            </a>
           </li>
         {/if}
       </ul>
