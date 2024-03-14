@@ -13,8 +13,17 @@
           <a class="nav-link" href="/about">about</a>
         </li>
         {#if $page.data.session}
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <strong>{$page.data.session.user?.email ?? $page.data.session.user?.name}</strong>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/profile">Profile</a></li>
+              <li><a class="dropdown-item" href="/auth/signout">SignOut</a></li>
+            </ul>
+          </li>
           <li class="nav-item">
-            <a class="nav-link" href="/profile"><strong>{$page.data.session.user?.email ?? $page.data.session.user?.name}</strong></a>
+            <a class="nav-link" href="/profile"></a>
           </li>
         {:else}
           <li class="nav-item">
