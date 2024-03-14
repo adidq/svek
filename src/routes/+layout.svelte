@@ -6,7 +6,8 @@
     <slot />
   </main>
   <footer>
-    <h1>footer</h1>
+    <hr/>
+    <p>footer</p>
   </footer>
 </div>
 <script>
