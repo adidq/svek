@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
-    <a class="navbar-brand" href="/">SVEK</a>
+    <a class="navbar-brand" href="/"><b>SVEK</b></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -24,11 +24,7 @@
           </li>
         {:else}
           <li class="nav-item">
-            <a class="nav-link">
-              <SignIn>
-                <div slot="submitButton">Sign in</div>
-              </SignIn>
-            </a>
+            <a class="nav-link" href="/auth/signin">SignIn</a>
           </li>
         {/if}
       </ul>
@@ -37,5 +33,4 @@
 </nav>
 <script>
   import { page } from "$app/stores"
-  import { SignIn, SignOut } from "@auth/sveltekit/components"
 </script>
