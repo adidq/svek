@@ -19,7 +19,7 @@
     color: transparent;
 };
 
-.gra-svelte {
+.graSvelte {
   background-image: linear-gradient(to left, #EB5027, orange);
     background-clip: text;
     -webkit-background-clip: text;
