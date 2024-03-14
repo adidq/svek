@@ -9,6 +9,7 @@
   <footer>
     <hr>
     <p>footer</p>
+    <p>powerd by <strong class="gra-svelte">SvelteKit</strong></p>
   </footer>
 </div>
 <script>
@@ -16,7 +17,7 @@
   import Header from "$components/header.svelte";
 </script>
 <style>
-  main{
-    margin: 5px;
-  }
+  main footer {
+    margin: 10px;
+  };
 </style>
