@@ -7,6 +7,7 @@ const config = {
       $components: "src/components",
       $lib: "src/lib",
       $routes: "src/routes",
+      $routes: "static",
     },
 		adapter: adapter()
 	}
