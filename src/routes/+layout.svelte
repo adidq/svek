@@ -1,24 +1,19 @@
 <div>
   <header>
     <Navbar />
-    {#if $page.data.session}
-      <!--signed in-->
-    {:else}
-      <div class="alert alert-primary" role="alert">Please <SignIn><strong>signin</strong></SignIn></div>
-    {/if}
+    <Header />
   </header>
   <main>
     <slot />
   </main>
   <footer>
     <hr>
-    <h3>footer</h3>
+    <p>footer</p>
   </footer>
 </div>
 <script>
   import Navbar from "$components/navbar.svelte";
-  import { page } from "$app/stores"
-  import { SignIn } from "@auth/sveltekit/components"
+  import Header from "$components/header.svelte";
 </script>
 <style>
   main{
