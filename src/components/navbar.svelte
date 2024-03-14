@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
     <a class="navbar-brand" href="/">SVEK</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -14,7 +14,7 @@
         </li>
         {#if $page.data.session}
           <li class="nav-item">
-            <a href="/profile"><strong>{$page.data.session.user?.email ?? $page.data.session.user?.name}</strong></a>
+            <a class="nav-link" href="/profile"><strong>{$page.data.session.user?.email ?? $page.data.session.user?.name}</strong></a>
           </li>
         {:else}
           <li class="nav-item">
