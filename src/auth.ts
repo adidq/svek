@@ -1,6 +1,7 @@
 import { SvelteKitAuth } from "@auth/sveltekit"
 import Google from "@auth/sveltekit/providers/google"
 import Naver from "@auth/sveltekit/providers/naver"
+import type { Handle } from "@sveltejs/kit";
 import { AUTH_GOOGLE_ID, AUTH_GOOGLE_SECRET, AUTH_NAVER_ID, AUTH_NAVER_SECRET, AUTH_SECRET } from "$env/static/private"
 
 export const { handle, signIn, signOut } = SvelteKitAuth({
@@ -13,4 +14,4 @@ export const { handle, signIn, signOut } = SvelteKitAuth({
   ],
   secret: AUTH_SECRET,
   trustHost: true
-})
+}) satisfies Handle;
