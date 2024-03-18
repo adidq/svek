@@ -1,6 +1,6 @@
 import { SvelteKitAuth } from "@auth/sveltekit"
 import Google from "@auth/sveltekit/providers/google"
-import Discord from "@auth/sveltekit/providers/naver"
+import Discord from "@auth/sveltekit/providers/discord"
 import type { Handle } from "@sveltejs/kit";
 import { AUTH_GOOGLE_ID, AUTH_GOOGLE_SECRET, AUTH_DISCORD_ID, AUTH_DISCORD_SECRET, AUTH_SECRET } from "$env/static/private"
 
