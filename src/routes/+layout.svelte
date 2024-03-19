@@ -1,4 +1,5 @@
 <div>
+  <ProgressBar color="#7F57F1" />
   <Header />
   <main>
     <slot />
@@ -8,6 +9,7 @@
 <script>
   import Header from "$components/header.svelte";
   import Footer from "$components/footer.svelte";
+  import { ProgressBar } from "@prgm/sveltekit-progress-bar";
 </script>
 <style>
   main{
