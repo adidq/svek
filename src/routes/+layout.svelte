@@ -1,5 +1,5 @@
 <div>
-  <ProgressBar color="#7F57F1" />
+  <ProgressBar color="#FFF" />
   <Header />
   <main>
     <slot />
