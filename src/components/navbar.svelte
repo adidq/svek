@@ -8,6 +8,7 @@
       <ul class="navbar-nav">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="/">Home</a>
+          <a class="nav-link active" aria-current="page" href="/profile">Profile</a>
         </li>
         {#if $page.data.session}
           <li class="nav-item dropdown">
